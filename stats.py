@@ -13,6 +13,10 @@ def get_all_characters(text):
     text = text.lower()
     characters = {}
     for char in text:
-        characters[char] = characters.get(char, 0) + 1
+        characters[str(char)] = characters.get(char, 0) + 1
 
     return characters
+
+
+def sort_dictionary(dictionary):
+    return dict(sorted(dictionary.items(), key=lambda x: x[1], reverse=True))
