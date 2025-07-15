@@ -8,7 +8,7 @@ def get_book_text(path):
 def get_num_words(text):
     return len(text.split())
 
-
+#count number of each character into the dictionary
 def get_all_characters(text):
     text = text.lower()
     characters = {}
@@ -16,4 +16,3 @@ def get_all_characters(text):
         characters[char] = characters.get(char, 0) + 1
 
     return characters
-
